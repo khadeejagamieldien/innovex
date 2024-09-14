@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>House of Idlies</title>
+    <link rel="stylesheet" href="13.css">
+    <link rel="stylesheet" href="social.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Innovex</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Technology</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+       <img src="/Users/admin/Downloads/The Web/floral.html/img/Untitled design-16.jpg" id="heroVideo">
+        <div class="hero-content">
+            <h1>Technology That Drives <br>Innovation</h1>
+            <p style="padding-left: 150px; padding-right: 150px; text-align: center;">At Innovex, we believe that technology is the key to unlocking new possibilities and achieving exceptional results. Our approach is built on the foundation of using the most advanced, reliable, and innovative technologies available in the industry. By staying ahead of the curve, we ensure our clients benefit from solutions that are not only effective today but are also future-proofed for tomorrow.</p>
+
+            <a href="" class="order-button">Book A Consultation</a><i class="fas fa-arrow-right"></i>
+           
+        </div> <div class="scroll-indicator">Scroll to explore</div>
+    </section>
+
+    <section class="tech-stack">
+        <div class="container">
+            <h2>Our Technology Stack</h2>
+            <p>We leverage a diverse range of technologies, tools, and frameworks to deliver bespoke solutions tailored to your business needs. Our team of experts is proficient in an array of technologies, ensuring that we always use the best fit for your project. Our technology stack includes:</p>
+            
+            <div class="tech-category">
+                <h3>Frontend Development</h3>
+                <p>React.js, Angular, Vue.js, HTML5, CSS3, JavaScript, TypeScript, and more. Our frontend solutions are designed for maximum performance, responsiveness, and seamless user experience.</p>
+            </div>
+
+            <div class="tech-category">
+                <h3>Backend Development</h3>
+                <p>Node.js, Python (Django, Flask), Java (Spring Boot), .NET, PHP (Laravel, Symfony), and more. We build robust, scalable, and secure backend systems that can handle complex business logic and integrate seamlessly with third-party services.</p>
+            </div>
+
+            <div class="tech-category">
+                <h3>Mobile App Development</h3>
+                <p>Swift, Kotlin, React Native, Flutter, and more. We develop high-performance mobile applications for iOS and Android that provide a native user experience and leverage device-specific features.</p>
+            </div>
+
+            <div class="tech-category">
+                <h3>Cloud and DevOps</h3>
+                <p>AWS, Azure, Google Cloud Platform, Docker, Kubernetes, Jenkins, and more. We enable cloud adoption and implement DevOps practices to ensure your applications are scalable, reliable, and continuously integrated.</p>
+            </div>
+
+            <div class="tech-category">
+                <h3>Database Management</h3>
+                <p>SQL (MySQL, PostgreSQL, SQL Server), NoSQL (MongoDB, Cassandra, DynamoDB), and more. We design and manage efficient, secure, and scalable databases that support your data-driven decisions.</p>
+            </div>
+
+            <div class="tech-category">
+                <h3>Artificial Intelligence and Machine Learning</h3>
+                <p>TensorFlow, PyTorch, Keras, Scikit-Learn, and more. Our AI and ML solutions empower businesses with predictive analytics, natural language processing, computer vision, and other advanced capabilities.</p>
+            </div>
+
+            <div class="tech-category">
+                <h3>Cybersecurity</h3>
+                <p>Implementing industry-standard security protocols, encryption technologies, intrusion detection systems, and more. We prioritize data protection and compliance to keep your business safe from cyber threats.</p>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="service-row">
+                <div class="service-card" style=" padding-left: 120px;">
+                    <h2>Cloud Technology Advancement</h2>
+                    <p>Empowering businesses with scalable, secure, and efficient cloud solutions. We offer cloud migration, optimization, and management services to ensure seamless integration and maximum performance.</p>
+                </div>
+                <div class="service-image" style=" padding-left: 120px;">
+                    <!-- Replace with relevant image -->
+                    <img src="/Users/admin/Downloads/The Web/floral.html/img/1 3.png" alt="Cloud Technology Advancement">
+                </div>
+            </div>
+            
+            <div class="service-row reverse">
+                <div class="service-card" style=" padding-right: 120px;">
+                    <h2>Customized Application Development</h2>
+                    <p>Transform your ideas into robust and scalable applications tailored to meet your business needs. From web to mobile, we develop applications that enhance user experience and drive growth.</p>
+                </div>
+                <div class="service-image" style=" padding-left: 120px;">
+                    <!-- Replace with relevant image -->
+                    <img src="/Users/admin/Downloads/The Web/floral.html/img/2 3.png" alt="Customized Application Development">
+                </div>
+            </div>
+            
+            <div class="service-row">
+                <div class="service-card" style=" padding-left: 120px;">
+                    <h2>Advanced Data Science Solutions</h2>
+                    <p>Unlock the power of data with our advanced data science solutions. We provide data analytics, machine learning, and AI-driven insights to help businesses make informed decisions and stay ahead of the competition.</p>
+                </div>
+                <div class="service-image" style=" padding-left: 120px;">
+                    <!-- Replace with relevant image -->
+                    <img src="/Users/admin/Downloads/The Web/floral.html/img/3 3.png" alt="Advanced Data Science Solutions">
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    
+    
+ 
+</body>
+<script>
+    window.addEventListener('scroll', function () {
+    // Get the scroll position
+    const scrollPosition = window.scrollY;
+
+    // Calculate the new opacity (adjust the divisor to control the fade speed)
+    const maxScroll = 700; // Scroll distance at which the fade completes
+    const opacity = Math.max(1 - scrollPosition / maxScroll, 0); // Calculate new opacity
+
+    // Apply the new opacity to the hero section
+    document.querySelector('.hero').style.opacity = opacity;
+});
+</script>
+
+</html>

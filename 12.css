@@ -1,0 +1,388 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+/* Header */
+/* Header */
+header {
+    position: fixed;
+    top: 15px;
+    width: 100%;
+    background-color: transparent; /* Make header transparent */
+    z-index: 1000; /* Ensure header stays on top of other elements */
+    padding-left: 40px;
+    justify-content: space-between;
+    
+}
+
+.nav-container {
+    display: flex; 
+    align-items: center;
+}
+
+.nav-container .logo {
+    font-size: 40px;
+    color: #fff; /* Ensure logo is visible */
+    font-weight: bolder;
+}
+
+.nav-container nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 1000px;
+    justify-content: space-between;
+}
+
+.nav-container nav ul li a {
+    color: white; /* White text color for better visibility */
+    font-size: 20px;
+    transition: color 0.3s;
+    justify-content: space-between;
+}
+
+.nav-container nav ul li a:hover {
+    color: orange; /* Change text color on hover */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;  /* Ensure content doesn't overflow */
+    transition: opacity 0.5s; /* Smooth transition for opacity change */
+}
+
+#heroVideo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Send the video behind the content */
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensure video covers entire background */
+}
+
+.hero-content {
+    position: relative;  /* Position the content absolutely */
+   top: -50px;  /* Align the content 50px from the bottom */
+    text-align: right;  /* Align the text to the left */
+    color: #fff;  /* Ensure the text color is readable */
+    z-index: 1;  /* Ensure content stays above the video */
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+   
+}
+.content {
+    position: absolute; /* Position content absolutely within the column */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Correct centering */
+    color: white; /* Text color */
+    padding: 20px; /* Add padding around text */
+    border-radius: 8px; /* Optional: rounded corners */
+    text-align: center; /* Center text */
+    z-index: 1; /* Ensure the text stays above the video */
+}
+.order-button {
+    
+    padding: 10px 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.scroll-indicator {
+    position: fixed;  /* Position it fixed relative to the viewport */
+    bottom: 20px;  /* Distance from the bottom */
+    left: 50%;  /* Center it horizontally */
+    transform: translateX(-50%);  /* Adjust for perfect centering */
+    font-size: 1em;  /* Font size */
+    color: #fff;  /* Text color */
+    z-index: 1000;  /* Ensure it stays above other elements */
+}
+
+/* Handmade Section */
+.handmade-section {
+    background-color: #111;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.handmade-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.handmade-section p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Walk the Talk Section */
+.walk-the-talk {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #000;
+}
+
+.walk-the-talk h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.feature-item img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Achievements Section */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+   
+}
+
+.service-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: one for text, one for image */
+    align-items: center;
+}
+
+.service-row.reverse {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense; /* Maintains content flow even if layout is reversed */
+}
+
+.service-row.reverse .service-card {
+    order: 2; /* Reverses the order for alternate layout */
+}
+
+.service-card {
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h2 {
+    color: #fff;
+    font-size: 24px;
+   
+}
+
+.service-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.service-image img {
+    width: 70%;
+    border-radius: 8px;
+    height:auto;
+   
+}
+
+.two-columns {
+    display: flex; /* Use Flexbox to create columns */
+    /* Space between the columns */
+    padding: 20px; /* Padding for overall section */
+    padding-bottom: 0;
+}
+
+.column {
+    flex: 1; /* Equal width for both columns */
+    padding: 20px; /* Padding for individual columns */
+    background-color: black; /* Background color for columns */
+   padding-top: 50px;
+   padding-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border: solid 1px grey;
+}
+.button-wrapper {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center; /* Centers the button vertically */
+    padding-left:20px;
+    padding-right: 130px;
+  }
+
+/* Button Styles */
+button {
+    background-image: linear-gradient(144deg, #cc8899, #5B42F3 90%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 18px;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:active,
+button:hover {
+    outline: 0;
+}
+
+button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+button:hover span {
+    background: none;
+   }
+   
+   button:active {
+    transform: scale(0.9);
+   }
+   .five-column-container {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(5, 1fr); /* Define 5 equal-width columns */
+    max-width: 1360px; /* Limit the container width */
+    margin: 0 auto; /* Center the container */
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.column2 {
+    background-color: black;
+    border: 1px solid grey;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Optional: Add a hover effect */
+}
+
+.column2 h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #c0c0c0;
+    padding-top: 30px;  
+}
+
+.column2 p {
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+/* Optional Hover Effect */
+.column2:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+#video {
+    width: 100%; /* Make the video fit the width of the column */
+    height: auto; /* Maintain aspect ratio */
+   object-fit: fill;
+    display: block; /* Ensure the video is a block element */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for video */
+    
+}
+footer {
+    background-color: #333;
+    padding-top: 20px;
+    color: white;
+ }
+
+ footer .cont {
+     display: flex; 
+     justify-content: space-between;
+     padding-left: 120px;
+ }
+
+ footer .column {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin-bottom: 20px;
+ }
+ 
+ footer p {
+     margin: 0;
+ }
+
+ .copyright {
+    text-align: center;
+    margin-right: 50px;
+    padding-bottom: 50px;
+ }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .achievements {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: stretch; /* Align items to stretch */
+    }
+}
+
