@@ -21,14 +21,12 @@ p {
     font-size: 1.1em;
 }
 
-/* Header */
-/* Header */
 header {
     position: fixed;
     top: 15px;
     width: 100%;
-    background-color: transparent; /* Make header transparent */
-    z-index: 1000; /* Ensure header stays on top of other elements */
+    background-color: transparent;
+    z-index: 1000;
     padding-left: 40px;
     justify-content: space-between;
     
@@ -41,7 +39,7 @@ header {
 
 .nav-container .logo {
     font-size: 40px;
-    color: #fff; /* Ensure logo is visible */
+    color: #fff; 
     font-weight: bolder;
 }
 
@@ -54,17 +52,16 @@ header {
 }
 
 .nav-container nav ul li a {
-    color: white; /* White text color for better visibility */
+    color: white; 
     font-size: 20px;
     transition: color 0.3s;
     justify-content: space-between;
 }
 
 .nav-container nav ul li a:hover {
-    color: orange; /* Change text color on hover */
+    color: orange; 
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     height: 100vh;
@@ -72,8 +69,8 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;  /* Ensure content doesn't overflow */
-    transition: opacity 0.5s; /* Smooth transition for opacity change */
+    overflow: hidden;  
+    transition: opacity 0.5s; 
 }
 
 #heroVideo {
@@ -84,18 +81,18 @@ header {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1; /* Send the video behind the content */
+    z-index: -1; 
     transform: translate(-50%, -50%);
-    object-fit: cover; /* Ensure video covers entire background */
+    object-fit: cover; 
 }
 
 .hero-content {
-    position: relative;  /* Position the content absolutely */
-   top: 70px;  /* Align the content 50px from the bottom */
-    left: 190px;    /* Align the content 50px from the left */
-    text-align: right;  /* Align the text to the left */
-    color: #fff;  /* Ensure the text color is readable */
-    z-index: 1;  /* Ensure content stays above the video */
+    position: relative;  
+   top: 70px;  
+    left: 190px;  
+    text-align: right;  
+    color: #fff; 
+    z-index: 1; 
 }
 
 .hero-content h1 {
@@ -104,15 +101,15 @@ header {
     left: -400px;
 }
 .content {
-    position: absolute; /* Position content absolutely within the column */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Correct centering */
-    color: white; /* Text color */
-    padding: 20px; /* Add padding around text */
-    border-radius: 8px; /* Optional: rounded corners */
-    text-align: center; /* Center text */
-    z-index: 1; /* Ensure the text stays above the video */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px; 
+    border-radius: 8px; 
+    text-align: center; 
+    z-index: 1;
 }
 .order-button {
     
@@ -124,16 +121,15 @@ header {
 }
 
 .scroll-indicator {
-    position: fixed;  /* Position it fixed relative to the viewport */
-    bottom: 20px;  /* Distance from the bottom */
-    left: 50%;  /* Center it horizontally */
-    transform: translateX(-50%);  /* Adjust for perfect centering */
-    font-size: 1em;  /* Font size */
-    color: #fff;  /* Text color */
-    z-index: 1000;  /* Ensure it stays above other elements */
+    position: fixed;  
+    bottom: 20px;  
+    left: 50%;  
+    transform: translateX(-50%); 
+    font-size: 1em;
+    color: #fff; 
+    z-index: 1000; 
 }
 
-/* Handmade Section */
 .handmade-section {
     background-color: #111;
     padding: 100px 20px;
@@ -150,7 +146,6 @@ header {
     margin: 0 auto;
 }
 
-/* Walk the Talk Section */
 .walk-the-talk {
     padding: 100px 20px;
     text-align: center;
@@ -179,42 +174,41 @@ header {
     margin-bottom: 20px;
 }
 
-/* Achievements Section */
 .achievements {
-    display: flex; /* Align items in a row */
-    justify-content: space-between; /* Distribute space between items */
-    align-items: center; /* Center items vertically */
-    padding: 50px 20px; /* Padding for spacing */
-    background-color: black; /* Background color */
-    text-align: center; /* Center-align text */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 50px 20px;
+    background-color: black; 
+    text-align: center;
 }
 
 .achievement-item {
-    flex: 1; /* Equal width for all items */
-    padding: 20px; /* Padding for individual item spacing */
-    margin: 10px; /* Margin for spacing between items */
-    background-color: black; /* White background for contrast */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    max-width: 250px; /* Optional: Limit width for responsiveness */
+    flex: 1; 
+    padding: 20px; 
+    margin: 10px;
+    background-color: black; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 250px; 
 }
 
 .achievement-item .icon {
-    font-size: 50px; /* Icon size */
-    color: #cc8899; /* Icon color */
-    margin-bottom: 20px; /* Space below icon */
+    font-size: 50px;
+    color: #cc8899; 
+    margin-bottom: 20px;
 }
 
 .achievement-item h3 {
-    font-size: 1.5em; /* Heading size */
-    margin-bottom: 10px; /* Space below heading */
-    color: #fff; /* Heading color */
+    font-size: 1.5em;
+    margin-bottom: 10px; 
+    color: #fff; 
 }
 
 .achievement-item p {
-    font-size: 1em; /* Paragraph size */
-    color: black; /* Paragraph color */
-    line-height: 1.5; /* Line height for readability */
+    font-size: 1em;
+    color: black; 
+    line-height: 1.5; 
 }
 
 
@@ -224,7 +218,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     max-width: 1300px;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto; 
     margin-bottom: 100px;
 }
 
@@ -254,15 +248,13 @@ header {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
    }
   
-  
-  
 
-.card:nth-child(even) { /* Apply styles to every even card */
-    background-color: #1c1c1c; /* Alternate background color */
+.card:nth-child(even) {
+    background-color: #1c1c1c; 
 }
 
-.card:nth-child(odd) { /* Apply styles to every odd card */
-    background-color: #252525; /* Default background color */
+.card:nth-child(odd) {
+    background-color: #252525; 
 }
 
 .card-icon {
@@ -287,38 +279,36 @@ header {
     padding-right: 20px;
 }
 
-/* Optional Hover Effect */
+
 .card:hover {
-    background-color: #333; /* Darker color on hover */
-    transform: translateY(-5px); /* Slight lift effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    background-color: #333; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .two-columns {
-    display: flex; /* Use Flexbox to create columns */
-    /* Space between the columns */
-    padding: 20px; /* Padding for overall section */
+    display: flex; 
+    padding: 20px; 
     padding-bottom: 0;
 }
 
 .column {
-    flex: 1; /* Equal width for both columns */
-    padding: 20px; /* Padding for individual columns */
-    background-color: black; /* Background color for columns */
+    flex: 1; 
+    padding: 20px;
+    background-color: black; 
    padding-top: 50px;
    padding-bottom: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border: solid 1px grey;
 }
 .button-wrapper {
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers the button horizontally */
-    align-items: center; /* Centers the button vertically */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
     padding-left:20px;
     padding-right: 130px;
   }
 
-/* Button Styles */
 button {
     background-image: linear-gradient(144deg, #cc8899, #5B42F3 90%, #00DDEB);
     border: 0;
@@ -363,10 +353,10 @@ button:hover span {
     transform: scale(0.9);
    }
    .five-column-container {
-    display: grid; /* Use CSS Grid */
-    grid-template-columns: repeat(5, 1fr); /* Define 5 equal-width columns */
-    max-width: 1360px; /* Limit the container width */
-    margin: 0 auto; /* Center the container */
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    max-width: 1360px;
+    margin: 0 auto; 
     margin-top: 0;
     padding-top: 0;
 }
@@ -376,7 +366,7 @@ button:hover span {
     border: 1px solid grey;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s; /* Optional: Add a hover effect */
+    transition: transform 0.3s;
 }
 
 .column2 h3 {
@@ -392,17 +382,16 @@ button:hover span {
     line-height: 1.6;
 }
 
-/* Optional Hover Effect */
 .column2:hover {
-    transform: translateY(-5px); /* Slight lift effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 #video {
-    width: 100%; /* Make the video fit the width of the column */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto; 
    object-fit: fill;
-    display: block; /* Ensure the video is a block element */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for video */
+    display: block; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     
 }
 footer {
@@ -436,8 +425,8 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .achievements {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: stretch; /* Align items to stretch */
+        flex-direction: column; 
+        align-items: stretch; 
     }
 }
 
