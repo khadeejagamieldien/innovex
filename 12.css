@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
     margin: 0;
     padding: 0;
@@ -21,14 +21,12 @@ p {
     font-size: 1.1em;
 }
 
-/* Header */
-/* Header */
 header {
     position: fixed;
     top: 15px;
     width: 100%;
-    background-color: transparent; /* Make header transparent */
-    z-index: 1000; /* Ensure header stays on top of other elements */
+    background-color: transparent; 
+    z-index: 1000; 
     padding-left: 40px;
     justify-content: space-between;
     
@@ -41,7 +39,7 @@ header {
 
 .nav-container .logo {
     font-size: 40px;
-    color: #fff; /* Ensure logo is visible */
+    color: #fff; 
     font-weight: bolder;
 }
 
@@ -54,17 +52,16 @@ header {
 }
 
 .nav-container nav ul li a {
-    color: white; /* White text color for better visibility */
+    color: white;
     font-size: 20px;
     transition: color 0.3s;
     justify-content: space-between;
 }
 
 .nav-container nav ul li a:hover {
-    color: orange; /* Change text color on hover */
+    color: orange;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     height: 60vh;
@@ -72,8 +69,8 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;  /* Ensure content doesn't overflow */
-    transition: opacity 0.5s; /* Smooth transition for opacity change */
+    overflow: hidden;  
+    transition: opacity 0.5s; 
 }
 
 #heroVideo {
@@ -84,17 +81,17 @@ header {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1; /* Send the video behind the content */
+    z-index: -1; 
     transform: translate(-50%, -50%);
-    object-fit: cover; /* Ensure video covers entire background */
+    object-fit: cover; 
 }
 
 .hero-content {
-    position: relative;  /* Position the content absolutely */
-   top: -50px;  /* Align the content 50px from the bottom */
-    text-align: right;  /* Align the text to the left */
-    color: #fff;  /* Ensure the text color is readable */
-    z-index: 1;  /* Ensure content stays above the video */
+    position: relative;  
+   top: -50px; 
+    text-align: right;
+    color: #fff;
+    z-index: 1;  
 }
 
 .hero-content h1 {
@@ -103,15 +100,15 @@ header {
    
 }
 .content {
-    position: absolute; /* Position content absolutely within the column */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Correct centering */
-    color: white; /* Text color */
-    padding: 20px; /* Add padding around text */
-    border-radius: 8px; /* Optional: rounded corners */
-    text-align: center; /* Center text */
-    z-index: 1; /* Ensure the text stays above the video */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    padding: 20px;
+    border-radius: 8px; 
+    text-align: center; 
+    z-index: 1; 
 }
 .order-button {
     
@@ -123,16 +120,15 @@ header {
 }
 
 .scroll-indicator {
-    position: fixed;  /* Position it fixed relative to the viewport */
-    bottom: 20px;  /* Distance from the bottom */
-    left: 50%;  /* Center it horizontally */
-    transform: translateX(-50%);  /* Adjust for perfect centering */
-    font-size: 1em;  /* Font size */
-    color: #fff;  /* Text color */
-    z-index: 1000;  /* Ensure it stays above other elements */
+    position: fixed;  
+    bottom: 20px;  
+    left: 50%;  
+    transform: translateX(-50%);  
+    font-size: 1em;  
+    color: #fff;  
+    z-index: 1000;  
 }
 
-/* Handmade Section */
 .handmade-section {
     background-color: #111;
     padding: 100px 20px;
@@ -149,7 +145,6 @@ header {
     margin: 0 auto;
 }
 
-/* Walk the Talk Section */
 .walk-the-talk {
     padding: 100px 20px;
     text-align: center;
@@ -178,7 +173,6 @@ header {
     margin-bottom: 20px;
 }
 
-/* Achievements Section */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -195,17 +189,17 @@ header {
 
 .service-row {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns: one for text, one for image */
+    grid-template-columns: 1fr 1fr; 
     align-items: center;
 }
 
 .service-row.reverse {
     grid-template-columns: 1fr 1fr;
-    grid-auto-flow: dense; /* Maintains content flow even if layout is reversed */
+    grid-auto-flow: dense; 
 }
 
 .service-row.reverse .service-card {
-    order: 2; /* Reverses the order for alternate layout */
+    order: 2; 
 }
 
 .service-card {
@@ -240,30 +234,28 @@ header {
 }
 
 .two-columns {
-    display: flex; /* Use Flexbox to create columns */
-    /* Space between the columns */
-    padding: 20px; /* Padding for overall section */
+    display: flex; 
+    padding: 20px;
     padding-bottom: 0;
 }
 
 .column {
-    flex: 1; /* Equal width for both columns */
-    padding: 20px; /* Padding for individual columns */
-    background-color: black; /* Background color for columns */
+    flex: 1;
+    padding: 20px;
+    background-color: black; 
    padding-top: 50px;
    padding-bottom: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border: solid 1px grey;
 }
 .button-wrapper {
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers the button horizontally */
-    align-items: center; /* Centers the button vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
     padding-left:20px;
     padding-right: 130px;
   }
 
-/* Button Styles */
 button {
     background-image: linear-gradient(144deg, #cc8899, #5B42F3 90%, #00DDEB);
     border: 0;
@@ -308,10 +300,10 @@ button:hover span {
     transform: scale(0.9);
    }
    .five-column-container {
-    display: grid; /* Use CSS Grid */
-    grid-template-columns: repeat(5, 1fr); /* Define 5 equal-width columns */
-    max-width: 1360px; /* Limit the container width */
-    margin: 0 auto; /* Center the container */
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    max-width: 1360px; 
+    margin: 0 auto; 
     margin-top: 0;
     padding-top: 0;
 }
@@ -321,7 +313,7 @@ button:hover span {
     border: 1px solid grey;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s; /* Optional: Add a hover effect */
+    transition: transform 0.3s; 
 }
 
 .column2 h3 {
@@ -337,17 +329,16 @@ button:hover span {
     line-height: 1.6;
 }
 
-/* Optional Hover Effect */
 .column2:hover {
-    transform: translateY(-5px); /* Slight lift effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 #video {
-    width: 100%; /* Make the video fit the width of the column */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto;
    object-fit: fill;
-    display: block; /* Ensure the video is a block element */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for video */
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     
 }
 footer {
@@ -378,11 +369,11 @@ footer {
     margin-right: 50px;
     padding-bottom: 50px;
  }
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .achievements {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: stretch; /* Align items to stretch */
+        flex-direction: column; 
+        align-items: stretch; 
     }
 }
 
