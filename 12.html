@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <!-- Navigation -->
+    
     <header>
         <div class="nav-container">
             <div class="logo">Innovex</div>
@@ -27,7 +27,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+  
     <section class="hero">
        <img src="/Users/admin/Downloads/The Web/floral.html/img/Untitled design-10.jpg" id="heroVideo">
         <div class="hero-content">
@@ -83,14 +83,13 @@
 </body>
 <script>
     window.addEventListener('scroll', function () {
-    // Get the scroll position
+    
     const scrollPosition = window.scrollY;
 
-    // Calculate the new opacity (adjust the divisor to control the fade speed)
-    const maxScroll = 700; // Scroll distance at which the fade completes
-    const opacity = Math.max(1 - scrollPosition / maxScroll, 0); // Calculate new opacity
+    
+    const maxScroll = 700; 
+    const opacity = Math.max(1 - scrollPosition / maxScroll, 0); 
 
-    // Apply the new opacity to the hero section
     document.querySelector('.hero').style.opacity = opacity;
 });
 </script>
